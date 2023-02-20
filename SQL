@@ -1,0 +1,554 @@
+--Question 1----------------------------------------------------------------------------------------
+SELECT Q1,
+	CASE
+		WHEN Q1 = '1' THEN 'Strongly disagree'
+		WHEN Q1 = '2' THEN 'Disagree'
+		WHEN Q1 = '3' THEN 'Neutral'
+		WHEN Q1 = '4' THEN 'Agree'
+		WHEN Q1 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: Women choose not to have a child because they are not financially stable'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q1 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q1 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q1 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q1 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q1 = '5'
+
+--Question 2----------------------------------------------------------------------------------------
+SELECT Q2,
+	CASE
+		WHEN Q2 = '1' THEN 'Strongly disagree'
+		WHEN Q2 = '2' THEN 'Disagree'
+		WHEN Q2 = '3' THEN 'Neutral'
+		WHEN Q2 = '4' THEN 'Agree'
+		WHEN Q2 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: Women choose not to have a child because it is expensive to raise children'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q2 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q2 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q2 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q2 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q2 = '5'
+
+--Question 3----------------------------------------------------------------------------------------
+SELECT Q3,
+	CASE
+		WHEN Q3 = '1' THEN 'Strongly disagree'
+		WHEN Q3 = '2' THEN 'Disagree'
+		WHEN Q3 = '3' THEN 'Neutral'
+		WHEN Q3 = '4' THEN 'Agree'
+		WHEN Q3 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: Women who choose not to have a child due to financial reasons are judged'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q3 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q3 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q3 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q3 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q3 = '5'
+
+--Question 4----------------------------------------------------------------------------------------
+SELECT Q4,
+	CASE
+		WHEN Q4 = '1' THEN 'Strongly disagree'
+		WHEN Q4 = '2' THEN 'Disagree'
+		WHEN Q4 = '3' THEN 'Neutral'
+		WHEN Q4 = '4' THEN 'Agree'
+		WHEN Q4 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: 
+	Women in high income jobs choose not to have a child because they face a high opportunity cost in losing potential earnings'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q4 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q4 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q4 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q4 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q4 = '5'
+
+--Question 5----------------------------------------------------------------------------------------
+SELECT Q5,
+	CASE
+		WHEN Q5 = '1' THEN 'Strongly disagree'
+		WHEN Q5 = '2' THEN 'Disagree'
+		WHEN Q5 = '3' THEN 'Neutral'
+		WHEN Q5 = '4' THEN 'Agree'
+		WHEN Q5 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: 
+	Childless women, who are infertile, choose not to have a child because of the high cost of fertility treatments or adoption'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q5 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q5 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q5 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q5 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q5 = '5'
+
+--Question 6----------------------------------------------------------------------------------------
+SELECT Q6,
+	CASE
+		WHEN Q6 = '1' THEN 'Strongly disagree'
+		WHEN Q6 = '2' THEN 'Disagree'
+		WHEN Q6 = '3' THEN 'Neutral'
+		WHEN Q6 = '4' THEN 'Agree'
+		WHEN Q6 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: 
+	Single women choose not to have a child because they cannot bear the financial responsibility on their own'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q6 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q6 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q6 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q6 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q6 = '5'
+
+--Question 7----------------------------------------------------------------------------------------
+SELECT Q7,
+	CASE
+		WHEN Q7 = '1' THEN 'Strongly disagree'
+		WHEN Q7 = '2' THEN 'Disagree'
+		WHEN Q7 = '3' THEN 'Neutral'
+		WHEN Q7 = '4' THEN 'Agree'
+		WHEN Q7 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'FINANCIAL: How have financial considerations influenced your decision about having children'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q7 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q7 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q7 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q7 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q7 = '5'
+
+--Question 8----------------------------------------------------------------------------------------
+SELECT Q8,
+	CASE
+		WHEN Q8 = '1' THEN 'Strongly disagree'
+		WHEN Q8 = '2' THEN 'Disagree'
+		WHEN Q8 = '3' THEN 'Neutral'
+		WHEN Q8 = '4' THEN 'Agree'
+		WHEN Q8 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'CHOICE: It is perfectly reasonable for a woman to choose not to have a child'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q8 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q8 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q8 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q8 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q8 = '5'
+
+--Question 9----------------------------------------------------------------------------------------
+SELECT Q9,
+	CASE
+		WHEN Q9 = '1' THEN 'Strongly disagree'
+		WHEN Q9 = '2' THEN 'Disagree'
+		WHEN Q9 = '3' THEN 'Neutral'
+		WHEN Q9 = '4' THEN 'Agree'
+		WHEN Q9 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'CHOICE: If a woman chooses not to have a child, society automatically has a negative perception her'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q9 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q9 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q9 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q9 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q9 = '5'
+
+--Question 10----------------------------------------------------------------------------------------
+SELECT Q10,
+	CASE
+		WHEN Q10 = '1' THEN 'Strongly disagree'
+		WHEN Q10 = '2' THEN 'Disagree'
+		WHEN Q10 = '3' THEN 'Neutral'
+		WHEN Q10 = '4' THEN 'Agree'
+		WHEN Q10 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'CHOICE: If a woman chooses not to have a child, she is making a poor decision'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q10 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q10 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q10 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q10 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q10 = '5'
+
+--Question 11----------------------------------------------------------------------------------------
+SELECT Q11,
+	CASE
+		WHEN Q11 = '1' THEN 'Strongly disagree'
+		WHEN Q11 = '2' THEN 'Disagree'
+		WHEN Q11 = '3' THEN 'Neutral'
+		WHEN Q11 = '4' THEN 'Agree'
+		WHEN Q11 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'CHOICE: A woman who decides not to have a child is viewed the same as a man who chooses not to have a child'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q11 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q11 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q11 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q11 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q11 = '5'
+
+--Question 12----------------------------------------------------------------------------------------
+SELECT Q12,
+	CASE
+		WHEN Q12 = '1' THEN 'Strongly disagree'
+		WHEN Q12 = '2' THEN 'Disagree'
+		WHEN Q12 = '3' THEN 'Neutral'
+		WHEN Q12 = '4' THEN 'Agree'
+		WHEN Q12 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'CHOICE: A woman who chooses to not have a child is selfish'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q12 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q12 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q12 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q12 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q12 = '5'
+
+--Question 13----------------------------------------------------------------------------------------
+SELECT Q13,
+	CASE
+		WHEN Q13 = '1' THEN 'Strongly disagree'
+		WHEN Q13 = '2' THEN 'Disagree'
+		WHEN Q13 = '3' THEN 'Neutral'
+		WHEN Q13 = '4' THEN 'Agree'
+		WHEN Q13 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: A woman who does not have a child, chooses not to because of negative stories about childbirth'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q13 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q13 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q13 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q13 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q13 = '5'
+
+--Question 14----------------------------------------------------------------------------------------
+SELECT Q14,
+	CASE
+		WHEN Q14 = '1' THEN 'Strongly disagree'
+		WHEN Q14 = '2' THEN 'Disagree'
+		WHEN Q14 = '3' THEN 'Neutral'
+		WHEN Q14 = '4' THEN 'Agree'
+		WHEN Q14 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: 
+	A woman who does not have a child chooses to do so because of negative messages about single parent households
+	(more specifically father not present in home)'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q14 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q14 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q14 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q14 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q14 = '5'
+
+--Question 15----------------------------------------------------------------------------------------
+SELECT Q15,
+	CASE
+		WHEN Q15 = '1' THEN 'Strongly disagree'
+		WHEN Q15 = '2' THEN 'Disagree'
+		WHEN Q15 = '3' THEN 'Neutral'
+		WHEN Q15 = '4' THEN 'Agree'
+		WHEN Q15 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: 
+	Women who do not have children make this decision because of outside influences such as family, religion, etc'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q15 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q15 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q15 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q15 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q15 = '5'
+
+--Question 16----------------------------------------------------------------------------------------
+SELECT Q16,
+	CASE
+		WHEN Q16 = '1' THEN 'Strongly disagree'
+		WHEN Q16 = '2' THEN 'Disagree'
+		WHEN Q16 = '3' THEN 'Neutral'
+		WHEN Q16 = '4' THEN 'Agree'
+		WHEN Q16 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: A woman who does not have a child, does so based on pressure from peers.'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q16 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q16 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q16 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q16 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q16 = '5'
+
+--Question 17----------------------------------------------------------------------------------------
+SELECT Q17,
+	CASE
+		WHEN Q17 = '1' THEN 'Strongly disagree'
+		WHEN Q17 = '2' THEN 'Disagree'
+		WHEN Q17 = '3' THEN 'Neutral'
+		WHEN Q17 = '4' THEN 'Agree'
+		WHEN Q17 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: 
+	A woman who does not have children makes this decision based on her fears that she 
+	and the other parent will have poor parenting skills'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q17 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q17 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q17 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q17 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q17 = '5'
+
+--Question 18----------------------------------------------------------------------------------------
+SELECT Q18,
+	CASE
+		WHEN Q18 = '1' THEN 'Strongly disagree'
+		WHEN Q18 = '2' THEN 'Disagree'
+		WHEN Q18 = '3' THEN 'Neutral'
+		WHEN Q18 = '4' THEN 'Agree'
+		WHEN Q18 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: Society places too much pressure on women to have children'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q18 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q18 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q18 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q18 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q18 = '5'
+
+--Question 19----------------------------------------------------------------------------------------
+SELECT Q19,
+	CASE
+		WHEN Q19 = '1' THEN 'Strongly disagree'
+		WHEN Q19 = '2' THEN 'Disagree'
+		WHEN Q19 = '3' THEN 'Neutral'
+		WHEN Q19 = '4' THEN 'Agree'
+		WHEN Q19 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: Society perceives women in same sex relationships as unable to have children'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q19 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q19 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q19 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q19 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q19 = '5'
+
+--Question 20----------------------------------------------------------------------------------------
+SELECT Q20,
+	CASE
+		WHEN Q20 = '1' THEN 'Strongly disagree'
+		WHEN Q20 = '2' THEN 'Disagree'
+		WHEN Q20 = '3' THEN 'Neutral'
+		WHEN Q20 = '4' THEN 'Agree'
+		WHEN Q20 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'OUTSIDE INFLUENCES: 
+	According to traditional views, a woman is not fulfilling her role as a woman if she chooses not to have a child'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q20 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q20 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q20 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q20 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q20 = '5'
+
+--Question 21----------------------------------------------------------------------------------------
+SELECT Q21,
+	CASE
+		WHEN Q21 = '1' THEN 'Strongly disagree'
+		WHEN Q21 = '2' THEN 'Disagree'
+		WHEN Q21 = '3' THEN 'Neutral'
+		WHEN Q21 = '4' THEN 'Agree'
+		WHEN Q21 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: A middle aged woman [35+ years old] who does not have a child is probably infertile'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q21 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q21 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q21 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q21 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q21 = '5'
+
+--Question 22----------------------------------------------------------------------------------------
+SELECT Q22,
+	CASE
+		WHEN Q22 = '1' THEN 'Strongly disagree'
+		WHEN Q22 = '2' THEN 'Disagree'
+		WHEN Q22 = '3' THEN 'Neutral'
+		WHEN Q22 = '4' THEN 'Agree'
+		WHEN Q22 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: 
+	A middle aged woman [35+ years old] who does not have a child has waited too long 
+	and will likely face health complications if she decides to have a child now'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q22 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q22 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q22 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q22 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q22 = '5'
+
+--Question 23----------------------------------------------------------------------------------------
+SELECT Q23,
+	CASE
+		WHEN Q23 = '1' THEN 'Strongly disagree'
+		WHEN Q23 = '2' THEN 'Disagree'
+		WHEN Q23 = '3' THEN 'Neutral'
+		WHEN Q23 = '4' THEN 'Agree'
+		WHEN Q23 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: Women who do not have children live longer than women who have children'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q23 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q23 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q23 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q23 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q23 = '5'
+
+--Question 24----------------------------------------------------------------------------------------
+SELECT Q24,
+	CASE
+		WHEN Q24 = '1' THEN 'Strongly disagree'
+		WHEN Q24 = '2' THEN 'Disagree'
+		WHEN Q24 = '3' THEN 'Neutral'
+		WHEN Q24 = '4' THEN 'Agree'
+		WHEN Q24 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: A woman should wait until she is physically fit before having a child.'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q24 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q24 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q24 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q24 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q24 = '5'
+
+--Question 25----------------------------------------------------------------------------------------
+SELECT Q25,
+	CASE
+		WHEN Q25 = '1' THEN 'Strongly disagree'
+		WHEN Q25 = '2' THEN 'Disagree'
+		WHEN Q25 = '3' THEN 'Neutral'
+		WHEN Q25 = '4' THEN 'Agree'
+		WHEN Q25 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: 
+	Women should not have children because it can cause health problems they did not have before, 
+	such as high blood pressure, depression or anxiety'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q25 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q25 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q25 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q25 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q25 = '5'
+
+--Question 26----------------------------------------------------------------------------------------
+SELECT Q26,
+	CASE
+		WHEN Q26 = '1' THEN 'Strongly disagree'
+		WHEN Q26 = '2' THEN 'Disagree'
+		WHEN Q26 = '3' THEN 'Neutral'
+		WHEN Q26 = '4' THEN 'Agree'
+		WHEN Q26 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: A woman should not have a child because the health risks outweigh the benefits'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q26 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q26 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q26 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q26 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q26 = '5'
+
+--Question 27----------------------------------------------------------------------------------------
+SELECT Q27,
+	CASE
+		WHEN Q27 = '1' THEN 'Strongly disagree'
+		WHEN Q27 = '2' THEN 'Disagree'
+		WHEN Q27 = '3' THEN 'Neutral'
+		WHEN Q27 = '4' THEN 'Agree'
+		WHEN Q27 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: A young woman [<35 years old] should not have health concerns when considering having a child'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q27 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q27 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q27 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q27 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q27 = '5'
+
+--Question 28----------------------------------------------------------------------------------------
+SELECT Q28,
+	CASE
+		WHEN Q28 = '1' THEN 'Strongly disagree'
+		WHEN Q28 = '2' THEN 'Disagree'
+		WHEN Q28 = '3' THEN 'Neutral'
+		WHEN Q28 = '4' THEN 'Agree'
+		WHEN Q28 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: Concerns about health should not be a reason why a woman chooses not to have a child'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q28 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q28 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q28 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q28 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q28 = '5'
+
+--Question 29----------------------------------------------------------------------------------------
+SELECT Q29,
+	CASE
+		WHEN Q29 = '1' THEN 'Strongly disagree'
+		WHEN Q29 = '2' THEN 'Disagree'
+		WHEN Q29 = '3' THEN 'Neutral'
+		WHEN Q29 = '4' THEN 'Agree'
+		WHEN Q29 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: 
+	Many experts say the best time to get pregnant is by 30 years of age. 
+	If a woman has not had a child by then, she should not have a child because of the risks'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q29 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q29 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q29 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q29 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q29 = '5'
+
+--Question 30----------------------------------------------------------------------------------------
+SELECT Q30,
+	CASE
+		WHEN Q30 = '1' THEN 'Strongly disagree'
+		WHEN Q30 = '2' THEN 'Disagree'
+		WHEN Q30 = '3' THEN 'Neutral'
+		WHEN Q30 = '4' THEN 'Agree'
+		WHEN Q30 = '5' THEN 'Strongly Agree'
+		ELSE 'Blank'
+	END AS 'HEALTH: Biologically speaking, if a woman has not had a child by her mid-thirties, it is too late'
+FROM ChildlessnessNJ;
+
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q30 = '1'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q30 = '2'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q30 = '3'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q30 = '4'
+SELECT COUNT(*) FROM ChildlessnessNJ WHERE Q30 = '5'
